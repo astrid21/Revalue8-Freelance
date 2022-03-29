@@ -1,0 +1,247 @@
+.content-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.79;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: rgba(251, 251, 251, 0.85);
+    /* text-decoration: underline; */
+}
+
+.paragraph{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9vw;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    color: rgba(251, 251, 251, 0.85);
+}
+
+.underline{
+    padding: 0 0 1px 0;
+    border-bottom: 1px solid rgba(251, 251, 251, 0.85);
+
+}
+
+.central-box{
+    /* flex-grow: 2; */
+    /* height: 40vh; */
+    height: 30vh;
+}
+
+.central-box-content{
+
+    display: flex;
+    justify-content: space-between;
+    /* flex-grow: 1; */
+    height: 90%;
+}
+
+.arrow-box{
+    margin: auto auto;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+}
+
+.arrow-picture{
+    width: 70%;
+    margin: auto;
+}
+
+.between-arrows-box{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+
+
+/* .cityPicture{
+    margin: auto;
+    background-image: url("../img/pic@2x.png");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: contain;
+    width: 100%;
+} */
+
+.cityPicture{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+    background-image: url("../img/pic@2x.png");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: contain;
+}
+
+.cityInfo{
+    /* overflow: scroll; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    color: rgba(251, 251, 251, 0.85);
+    overflow-x: hidden;
+}
+
+
+.list-title{
+    font-size: 1.2vw;
+}
+/* 
+.demo-list{
+    display: inline-block;
+    position: absolute;;
+} */
+
+
+
+
+
+
+
+
+
+.under-box{
+    display: flex;
+    /* flex-grow: 1; */
+    height: 40%;
+
+}
+.box-left{
+    width: 50%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.1;
+    letter-spacing: 0.2px;
+    /* text-align: center; */
+    color: rgba(251, 251, 251, 0.85);
+    height: 100%;
+}
+
+.box-right{
+    width: 50%;
+    display: flex;
+}
+
+.another-box{
+    padding: 0 5%;
+}
+#chart_div{
+    width: 100%;
+}
+
+.right-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: rgba(251, 251, 251, 0.85);
+}
+
+.small{
+    font-size: 0.7vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.94;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: var(--white);
+}
+
+.circle1{
+    background-image: url("../img/avg-annual-last-5-years-2@2x.png");
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    height: 60%;
+    text-align: center;
+    width: 100%;
+
+}
+
+.circle2{
+    background-image: url("../img/avg-annual-last-5-years@2x.png");
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    height: 60%;
+    text-align: center;
+
+}
+
+.circle-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.69;
+    letter-spacing: 0.2px;
+    color: rgba(251, 251, 251, 0.85);
+    margin: auto 0;
+    position: relative;
+    top: 45%;
+}
+
+
+.twoPoints{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ball{
+    /* display: inline-block; */
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    margin: 8px 2px;
+    background-color: var(--white);
+
+}
+
+
+.grey{
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+.chart-wrap{
+    /* display: inline-block; */
+position: absolute;
+display: inline;
+right: 0px;
+top: 0px;
+}
+
+
+.display-none{
+    display: none;
+}

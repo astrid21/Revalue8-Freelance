@@ -1,0 +1,20 @@
+ /* CHANGES FOR THE SLIDER THUMB IN THE RIGHT BOX HEADING */
+ .slider2::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%; 
+    background: var(--white);
+    cursor: pointer;
+    box-shadow: 0px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65);
+  }
+
+  .slider2::-moz-range-thumb:hover {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: var(--white);
+    cursor: pointer;
+    box-shadow: 0px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65);
+  }

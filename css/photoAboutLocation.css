@@ -1,0 +1,29 @@
+.pictureBox{
+    width: 100%;
+}
+
+.OtherPictureBox{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.cityPhoto{
+    width: 100%;
+}
+
+.right-arrow{
+    position: absolute;
+    top: 45%;
+}
+
+.left-arrow{
+    position: absolute;
+    right: 0;
+    top: 45%;
+}
+
+.arrowImage{
+    width: 75%;
+}

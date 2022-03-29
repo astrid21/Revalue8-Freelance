@@ -1,0 +1,66 @@
+<html>
+  <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">    
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+    body{
+        background-color: blue
+    }
+    </style>
+    
+    <script type="text/javascript">
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Price');
+
+      data.addRows([
+
+        ['2012', 1000000],
+        ['2013', 1050000],
+        ['2014', 1100000],
+        ['2015', 1160000],
+        ['2016', 1200000],
+        ['2017', 1210000]
+      ]);
+
+    var options = {
+        legend: 'none',
+        backgroundColor: 'transparent',
+        lineWidth: 3,
+        hAxis: {
+          textStyle: {
+            color: '#ffffff',
+            fontSize: 10,
+            fontName: 'Lato',
+          },
+          gridlines: {
+            color: 'transparent'
+            }
+        },
+        vAxis: {
+          textStyle: {
+            color: '#ffffff',
+            fontSize: 10,
+          },
+          gridlines: {
+        color: 'transparent'
+        }
+        },
+        colors: ['#ffffff']
+      };
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 400px; height: 240px;"></div>
+  </body>
+</html>

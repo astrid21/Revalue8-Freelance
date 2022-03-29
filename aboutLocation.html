@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/other.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/aboutlocation.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+<body>
+    <div class="wrapper2">
+        <header>
+            <nav class="disp-flex navBarOther">
+                    <div class="container2 disp-flex ">
+                        <div class="disp-flex">
+                            <div class="">
+                                <img src="img/logo.png" alt="logo-revalue">
+                            </div>
+                            <div class="navBarSearch">
+                                <img src="img/search-white-50.png" alt="search" class="searchImg">
+                                <select name="Search" id="" class="navBarSelect">
+                                    <option value="">Upper east side</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="language">
+                            <a href="#" class="language-select en-he ">En</a>
+                            <span>|</span>
+                            <a href="#" class="en-he">He</a>
+                        </div>
+                    </div>
+                </nav>
+        </header>
+        <div class="box">
+            <div class="columnLeft">
+                <!-- Tabs investment return, about location and purchase details -->
+                <div class="tabs-container">
+                    <div class="tab sel-tab">
+                        <div class="tab-box">
+                            <img src="img/active-return@2x.png" alt="up-arrow" class="tab-img">
+                            <h4 class="sel-tab-title">Investment <br>  Return</h4>
+                        </div>
+                    </div>
+                    <div class="tab no-sel-tab">
+                        <div class="tab-box">
+                                <img src="img/location@2x.png" alt="location" class="tab-img">
+                                <h4 class="no-sel-tab-title">Read About <br> Location</h4>                       
+                        </div>
+                    
+                    </div>
+                    <div class="tab no-sel-tab">
+                        <div class="tab-box">
+                                <img src="img/purchase@2x.png" alt="purchase" class="tab-img">
+                                <h4 class="no-sel-tab-title">Purchase <br> Details</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box  " >
+                    <div class="container2">
+                        <h3 class="content-title"> <span class="underline">Upper East Side, Manhattan - New York</span> </h3>
+                        <p class="paragraph">The Posh, residential Upper East Side is known for its wealthy denizens, fancy restaurants and designer shops along Madison Avenue. It's pretty neighborhood, with a mix of classic brownstones and upscale high-rises</p>
+                    </div>
+                    <div class="central-box">
+                        <div class="central-box-content">
+                            <div id="leftArrow" class="arrow-box"> <img src="img/left-arrow@2x.png" alt="LeftArrow" class="arrow-picture"></div>
+                            <div class="between-arrows-box">
+                                <div class="cityPicture" ></div>
+                                <div class="cityInfo">
+                                    <div class="list demo-list">
+                                        <h5 class="list-title">Demographics:</h5>
+                                        <ul>
+                                            <li>Population - 141K</li>
+                                            <li>Aged 65+ - 17.7%</li>
+                                            <li>Foreign-born - 25%</li>
+                                            <li>Median Household income - $108K</li>
+                                        </ul>
+                                    </div>
+                                    <div class="list">
+                                        <h5 class="list-title">Transportation:</h5>
+                                        <ul>
+                                            <li>Units 1/2 mile of a subway station: 100%</li>
+                                            <li>Units 1/4 mile of a subway station: 97%</li>
+                                        </ul>
+                                    </div>
+                                    <div class="list">
+                                        <h5 class="list-title">Housing Market:</h5>
+                                        <ul>
+                                            <li>Homeownership rate - 35.2%</li>
+                                            <li>Rental Vacancy rate - 4.6%</li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart-wrap">
+                                            <div id="piechart" ></div>
+                                        </div>
+                                </div>
+
+                            </div>
+                            <div id="rightArrow" class="arrow-box"><img src="img/right-arrow@2x.png" alt="RightArrow" class="arrow-picture"></div>
+                        </div>
+                        
+                        <div class="twoPoints">
+                            <div id="ball1" class="ball"></div>
+                            <div id="ball2" class="ball grey"></div>
+                        </div>
+                    </div>
+
+                    <div class="container2 under-box">
+                        <div class="box-left">
+                            <div>Price change</div>
+                            <div id="chart_div"></div>
+                        </div>
+                        <div class="box-right">
+                            <div class="another-box">
+                                <div class="right-title">Avg. annual Price Change <br> <span class="small">Last 5 years</span></div>
+                                <div class="circle1"><span class="circle-text">3.4% </span></div>
+                            </div>
+                            <div class="another-box">
+                                <div class="right-title">Avg. annual Price Change <br> <span class="small">Last 5 years</span></div>
+                                <div class="circle2"><div class="circle-text">2.6% </div> </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="columnRight">
+                <div class="invest-header">
+                    <div class="img-title-container">
+                        <div class="budget-img"></div>
+                        <h3 class="budget-title">My Investment Budget</h3>
+                    </div>
+                    <div class="slider-container3">
+                        <div class="slider-box3">
+                            <div class="slider-right3"></div>
+                            <input type="range" min="0" max="10000000" value="5000000" class="slider2">
+                        </div>
+                            <span class="output-style2">$5,000,000</span>
+                    </div>
+                    
+                </div>
+                <div class="map-container"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+      $(document).ready(function(){
+
+    
+        google.charts.load('current', {packages: ['corechart', 'line']});
+        google.charts.setOnLoadCallback(drawBasic);
+        
+        function drawBasic() {
+        
+              var data = new google.visualization.DataTable();
+              data.addColumn('string', 'Year');
+              data.addColumn('number', 'Price');
+        
+              data.addRows([
+        
+                ['2012', 1000000],
+                ['2013', 1050000],
+                ['2014', 1100000],
+                ['2015', 1160000],
+                ['2016', 1200000],
+                ['2017', 1210000]
+              ]);
+        
+            var options = {
+                legend: 'none',
+                backgroundColor: 'transparent',
+                lineWidth: 3,
+                hAxis: {
+                  textStyle: {
+                    color: '#ffffff',
+                    fontSize: 10,
+                    fontName: 'Lato',
+                  },
+                  gridlines: {
+                    color: 'transparent'
+                    }
+                },
+                vAxis: {
+                  textStyle: {
+                    color: '#ffffff',
+                    fontSize: 10,
+                  },
+                  gridlines: {
+                color: 'transparent'
+                }
+                },
+                colors: ['#ffffff']
+              };
+              var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        
+              chart.draw(data, options);
+            }
+
+
+     google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Ethnicity', 'percentage'],
+          ['White',     71.2],
+          ['Asian',      16.9],
+          ['Hispanic',  6.8],
+          ['Black', 5.1],
+        ]);
+
+        var options = {
+            chartArea:{left:250,top:5},
+            backgroundColor: 'transparent',
+            legend: 'none',
+            width: '100%',
+            height: '500px',
+            tooltip: {
+                text: 'percentage'
+            },
+            pieSliceText: 'label',
+            pieSliceBorderColor:"transparent",
+
+        };
+
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+
+
+    //   I check to make sure the CityPicture is on display and not the CityInfo, and that the first ball is white
+      CheckDisplayCentralBox()
+        const leftArrow = $('#leftArrow');
+        const rightArrow = $('#rightArrow');
+        leftArrow.click(function(){ 
+            $('.cityPicture').removeClass('display-none');
+            $('.cityInfo').addClass('display-none');
+            $('#ball1').removeClass('grey')
+            $('#ball2').addClass('grey')
+
+        })
+        rightArrow.click(function(){ 
+            $('.cityPicture').addClass('display-none');
+            $('.cityInfo').removeClass('display-none');
+            $('#ball1').addClass('grey')
+            $('#ball2').removeClass('grey')
+
+        })
+      });
+      function CheckDisplayCentralBox(){    
+        if($('.cityPicture').hasClass('display-none')){
+            $('.cityPicture').removeClass('display-none')
+        }
+        $('.cityInfo').addClass('display-none');
+
+        if($('#ball1').hasClass('grey')){
+            $('#ball1').removeClass('grey')
+        }
+        $('#ball2').addClass('grey')
+      };
+
+     </script>
+</body>
+</html>

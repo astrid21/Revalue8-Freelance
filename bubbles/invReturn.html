@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/other.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="wrapper2">
+        <header>
+            <nav class="disp-flex navBarOther">
+                    <div class="container2 disp-flex ">
+                        <div class="disp-flex">
+                            <div class="">
+                                <img src="img/logo.png" alt="logo-revalue">
+                            </div>
+                            <div class="navBarSearch">
+                                <img src="img/search-white-50.png" alt="search" class="searchImg">
+                                <select name="Search" id="" class="navBarSelect">
+                                    <option value="">Upper east side</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="language">
+                            <a href="#" class="language-select en-he ">En</a>
+                            <span>|</span>
+                            <a href="#" class="en-he">He</a>
+                        </div>
+                    </div>
+                </nav>
+        </header>
+        <div class="box">
+            <div class="columnLeft">
+                <!-- Tabs investment return, about location and purchase details -->
+                <div class="tabs-container">
+                    <div class="tab sel-tab">
+                        <div class="tab-box">
+                            <img src="img/active-return@2x.png" alt="up-arrow" class="tab-img">
+                            <h4 class="sel-tab-title">Investment <br>  Return</h4>
+                        </div>
+                    </div>
+                    <div class="tab no-sel-tab">
+                        <div class="tab-box">
+                                <img src="img/location@2x.png" alt="location" class="tab-img">
+                                <h4 class="no-sel-tab-title">Read About <br> Location</h4>                       
+                        </div>
+                    
+                    </div>
+                    <div class="tab no-sel-tab">
+                        <div class="tab-box">
+                                <img src="img/purchase@2x.png" alt="purchase" class="tab-img">
+                                <h4 class="no-sel-tab-title">Purchase <br> Details</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box" >
+                    <!-- FILTERS TABS : investment, mortage, others -->
+                    <div class="filters-container">
+                        <div class="filters-box">
+                                <div id="InvestmentButton" class="sel-filter">Investment <br> Filters</div>
+                                <div id="MortageButton" class="no-sel-filter">Mortgage <br> Filters</div>
+                                <div id="OtherButton" class="no-sel-filter">Other <br> Filters</div>
+                        </div>
+                    </div>
+                    <div class="middle-box" >
+                        <!-- Container with the content for each filter -->
+                        <!-- INVESTMENT FILTERS -->
+                        <div id="InvestmentFilters" class="container2 middle-container disp-none" >
+                                <div class="slider-container2">
+                                    <div class="slider-output-container">
+                                        <span>Apartment <br> Price <img src="img/apartment-price@2x.png" alt="house" class="slider-title-img"></span>
+                                        <!-- this is the span that would change the number when the slider moves with js -->
+                                        <div class="output-style">$5,000,000 
+                                            <!-- THIS IS NEW!!!! -->
+                                            <span class="bubble1">
+                                                <h5 class="bubbleTitle1">Apartment Price </h5>
+                                                The default Apartment Price is the median apartment price in this region. <br> You can change the price according to your own research
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="slider-box2">
+                                        <div class="slider-right2"></div>
+                                        <input type="range" min="0" max="10000000" value="5000000" class="slider2">
+                                    </div>
+                                </div>
+                                <div class="slider-container2">
+                                    <div class="slider-output-container">
+                                        <span>Apartment <br> Rent <img src="img/apartment-price@2x.png" alt="house" class="slider-title-img"></span>
+                                        <!-- this is the span that would change the number when the slider moves with js -->
+                                        <span class="output-style">$10,000
+                                            <!-- THIS IS NEW!!!! -->
+                                            <span class="bubble1">
+                                                    <h5 class="bubbleTitle1">Apartment Rent </h5>
+                                                    The default Apartment Rent is the
+                                                    median apartment Rent in this region. <br>
+                                                    You can change the price according to
+                                                    your own research</span>
+                                        </span>
+                                    </div>
+                                    <div class="slider-box2">
+                                        <div class="slider-right2"></div>
+                                        <input type="range" min="0" max="20000" value="10000" class="slider2">
+                                    </div>
+                                </div>
+                        </div>
+
+                        <!-- MORTAGE FILTERS -->
+                        <div  id="MortageFilters" class="container2 middle-container disp-none">
+                                <div class="slider-container2">
+                                    <div class="slider-output-container">
+                                        <span>Mortage <br> Rate </span>
+                                        <!-- this is the span that would change the number when the slider moves with js -->
+                                        <span class="output-style">4%</span>
+                                    </div>
+                                    <div class="slider-box2">
+                                        <div class="slider-right2"></div>
+                                        <input type="range" min="0" max="10.0" value="5" class="slider2">
+                                    </div>
+                                </div>
+                                <div class="slider-container2">
+                                    <div class="slider-output-container">
+                                        <span>Mortage <br> Years </span>
+                                        <!-- this is the span that would change the number when the slider moves with js -->
+                                        <span class="output-style">15$</span>
+                                    </div>
+                                    <div class="slider-box2">
+                                        <div class="slider-right2"></div>
+                                        <input type="range" min="0" max="30" value="15" class="slider2">
+                                    </div>
+                                </div>
+
+                        </div>
+
+                        <!-- OTHER FILTERS -->
+                        <div id="OtherFilters" class="container2 middle-container">
+                            <div class="min-plus-box">
+                                <div class="min-plus-title">Avg Price Growth</div>
+                                <div class="min-plus-input">
+                                    <button class="min-plus">-</button>
+                                    <div class="min-plus-number">1.5%</div>
+                                    <button class="min-plus">+</button>
+                                </div>
+                            </div>
+                            <div class="min-plus-box">
+                                <div class="min-plus-title">Avg Rent Growth</div>
+                                <div class="min-plus-input">
+                                    <button class="min-plus">-</button>
+                                    <div class="min-plus-number">2.0%</div>
+                                    <button class="min-plus">+</button>
+                                </div>
+                            </div>
+                            <div class="min-plus-box">
+                                <div class="min-plus-title">Realtor Fee</div>
+                                <div class="min-plus-input">
+                                    <button class="min-plus">-</button>
+                                    <div class="min-plus-number">3.5%</div>
+                                    <button class="min-plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container2 last-box">
+                        <!-- THIS ONLY NEEDS TO BE DISPLAYED ON THE MORTAGE FILTERS TAB -->
+                        <div class="month-mortgage disp-none">
+                            Monthly Mortgage pay <p class="month-mortgage-output">5,500$</p>
+                        </div>
+                        <div class="box-perc">
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 200 200"
+                            class="progress-ring" 
+                            preserveAspectRatio="xMidYMid meet">
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="50%">
+                                        <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#03e4ff;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle
+                                    class="progress-circle"
+                                    stroke="url(#grad1)"
+                                    stroke-width="10"
+                                    fill="transparent"
+                                    r="90"
+                                    cx="130"
+                                    cy="100"
+                                    stroke-dasharray="565.48 565.48"
+                                    stroke-dashoffset="565.48"
+                                    transform="rotate(90 100 100)"
+                                    />
+                                <text fill="url(#grad1)" class="percentage"  x="50" y="140">3.4%</text>
+                            </svg>
+                                <!-- THIS IS NEW!!!! -->
+                                <span class="bubble2">
+                                    <h5 class="bubbleTitle1">Maximum Average Annual Return from Investment</h5>
+                                    This will be your potential annual average return from your
+                                    investment. It is calculated after considering the apartment
+                                    price & rent, mortgage, price & rent growth and realtor
+                                    fees. </span>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnRight">
+                <div class="invest-header">
+                    <div class="img-title-container">
+                        <div class="budget-img"></div>
+                        <h3 class="budget-title">My Investment Budget</h3>
+                    </div>
+                    <div class="slider-container3">
+                        <div class="slider-box3">
+                            <div class="slider-right3"></div>
+                            <input type="range" min="0" max="10000000" value="5000000" class="slider2">
+                        </div>
+                            <span class="output-style2">$5,000,000</span>
+                    </div>
+                    
+                </div>
+                <div class="map-container"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script>
+    $(document).ready(function(){  
+    const circle1 = document.querySelector('.progress-circle');
+    const radius1 = circle1.r.baseVal.value;
+    const circumference1 = radius1 * 2 * Math.PI;
+
+    //the percent of the circle that wants to be shown should be 
+    function setProgress(percent, circumference, circle) {
+        const offset = circumference - percent / 100 * circumference;
+        circle.style.strokeDashoffset = offset;
+    }
+
+    setProgress(60, circumference1, circle1)
+
+    const invFilDiv = $('#InvestmentFilters')
+    const mortFilDiv = $('#MortageFilters')
+    const otherFilDiv = $('#OtherFilters')
+    const invButt = $('#InvestmentButton')
+    const mortButt = $('#MortageButton')
+    const otherButt = $('#OtherButton')
+    var percText = $('.month-mortgage')
+
+
+    if(invFilDiv.hasClass('disp-none')){
+        invFilDiv.removeClass('disp-none');
+        mortFilDiv.addClass('disp-none');
+        otherFilDiv.addClass('disp-none')
+        percText.addClass('disp-none')
+    };
+
+    invButt.click(function(){
+        invFilDiv.removeClass('disp-none');
+        mortFilDiv.addClass('disp-none');
+        otherFilDiv.addClass('disp-none')
+        percText.addClass('disp-none')
+
+    })
+
+    mortButt.click(function(){
+        mortFilDiv.removeClass('disp-none');
+        invFilDiv.addClass('disp-none');
+        otherFilDiv.addClass('disp-none')
+        percText.removeClass('disp-none')
+
+    })
+
+    otherButt.click(function(){
+        otherFilDiv.removeClass('disp-none');
+        mortFilDiv.addClass('disp-none');
+        invFilDiv.addClass('disp-none')
+        percText.addClass('disp-none')
+
+    })
+
+    
+
+
+})    
+</script>
+
+</body>
+</html>

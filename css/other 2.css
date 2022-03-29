@@ -1,0 +1,774 @@
+
+:root {
+    --white: #ffffff;
+    --neon-blue: #03e4ff;
+  }
+
+  /* same body properties as the homepage */
+  body{
+    padding: 0;
+    margin: 0;
+    /* background-color: #0d162c; */
+    font-family: 'Raleway', sans-serif;
+    /* min-height: 600px; */
+    /* overflow: hidden;  */
+
+    /* CHANGED THE HEIGHT */
+  height: 100vh;
+  }
+  /* Specific to the pages that are not the homepage */
+
+  /* NEWWWWWWWWW */
+  .wrapper2{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+  }
+
+.container2{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+  }
+  
+  /* CHANGED IN 1ST BUG ROUND */
+  .navBarOther{
+    width: 100%;
+    padding: 24px 0px 24px 0px;
+    box-shadow: 0px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65);
+    background-image: linear-gradient(to top, #1a4787, #0d162c);
+    POSITION: relative;
+    z-index: 3;
+  }
+  
+  .disp-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navBarSearch{
+    margin-left: 35px;
+  }
+  
+  .searchImg{
+    height: 18px;
+    vertical-align: middle;
+  }
+  
+  .navBarSelect{
+    width: 200px;
+    -webkit-appearance: none !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 15.5px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.36;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #0d162c;
+    border-radius: 20px;
+    border: none;
+    padding: 3px 0px 3px 13px;
+    background: url("../img/filled-x-24.png") no-repeat 98% center;
+    background-color: var(--white);
+    background-size: 18px;
+  
+  }
+  
+  .navBarSelect:focus{
+    outline: none;
+  }
+
+  .language a{
+    text-decoration: none;
+  }
+  
+  .language span{
+    color: var(--white);
+  }
+  
+  .en-he {
+    font-family: 'Lato', sans-serif;
+    font-size: 14.6px;
+    letter-spacing: 0.1px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: var(--white);
+  }
+  
+  .language-select {
+    font-size: 17.8px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    color: var(--neon-blue);
+  }
+  
+
+  /* CHANGEDDDD ALLL OF THISSS */
+  .box{
+    /* height: 100vh; */
+    flex-grow: 1;   
+  }
+
+  /* I remove this for nowww */
+/* 
+  @media only screen and (max-height: 678px){
+    .box{
+      height: 630px;
+    }
+  } */
+
+  .columnLeft{
+    height: 100%;
+    float: left;
+    width: 38%;
+    /* I removed this image and placed it in the actual box where it goes */
+    /* background-image: linear-gradient(9deg, #1a4787, #0d162c); */
+
+    /* THIS IS NEWWW!!!!!!!!! */
+    display: flex;
+    flex-flow: column;
+  }
+  
+  .columnRight{
+    height: 100%;
+    float: left;
+    width: 62%;
+
+    /* THIS IS NEWWW!!!!!!! */
+    display: flex;
+    flex-flow: column;
+  
+  }
+  
+  /* CHANGED ON THE 1ST BUG ROUND */
+  .tabs-container{
+    height: 63px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65)
+  }
+  
+  /* this I added  */
+  
+  @media only screen  and (min-width : 1824px) {
+    /* for big screens */
+    .tabs-container{
+      height: 10%;
+    }
+  }
+  
+  
+  
+  .tab{
+    height: 100%;
+    float: left;
+    width: 33.33%;
+    display: inline-flex;
+  }
+  
+  .sel-tab{
+    box-shadow: 0px 1px 9.1px 0.9px #000000;
+    background-color: #3883f1;
+  }
+  
+  .sel-tab-title{
+    margin: auto 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4vw;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #0e1b36;
+  }
+  
+  
+  .no-sel-tab{
+    box-shadow: inset 0px 1px 2px 0 rgba(0, 0, 0, 0.47);
+    background-color: #73aafa;
+  }
+  
+  .no-sel-tab-title{
+    margin: auto 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #fbfbfb;
+    opacity: 0.8;
+  }
+  
+  .tab-img{
+    margin: auto 2px auto 0;
+    height: 2.6vw;
+  
+  }
+  
+  .tab-box{
+    display: inline-flex;
+    margin: auto;
+  }
+  
+
+  /* CHAGED IN THE 1ST BUG ROUND */
+  .content-box{
+    background-image: linear-gradient(9deg, #1a4787, #0d162c);
+    flex-grow: 1;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65);
+
+  }
+  .filters-container{
+    display: flex;
+  }
+  
+  .filters-box{
+    margin: auto;
+    display: inline-flex;
+    padding: 3% 0 0 0;
+  }
+  
+  /* the selected filter window title had this style */
+  .sel-filter{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #fbfcff;
+    border-bottom: 4px solid #fbfcff;
+    margin: 10px;
+  }
+  
+  /* the non-selected filter window title have this style */
+  .no-sel-filter{
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #596d88;
+  }
+  
+  .middle-box{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+    height: 40%;
+  }
+
+  .middle-container{
+    height: 100%;
+  }
+  
+  /* this class goes instead of the slider-container in the home page */
+  .slider-container2{
+    /* THERE IS NO MARGIN */
+/* the height is different */
+    height: 50%;
+    /* the width is different */
+    width: 100%;
+  }
+  
+  /* the slider outputs are completely different */
+  .slider-output-container{
+    margin: 0 0 2% 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: var(--white);
+  }
+  
+  
+  .slider-title-img{
+    height: 2vw;
+  }
+  
+  /* style of the output that changes when the slider is moved */
+  .output-style{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: var(--white);
+    padding: 7% 0 0 0;
+
+    /* CHANGED IN 1ST ROUND OF BUGS */
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* this class is almost same as the one used in the homepage(slider-box) and i will write all the differences */
+  .slider-box2{
+    background: linear-gradient(to right, #34E3FD, #2696F1);
+    /* changed the height to 4px, not mut different though */
+    height: 4px;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  /* this class is instead of the slider-right in the homepage */
+  .slider-right2 {
+    background: white;
+    /* the height changes to 4px */
+    height: 4px;
+    /* the border-radius is removed */
+    /* border-radius: 0 5px 5px 0; */
+    width: 50%;
+    right: 0;
+    position: absolute;
+  }
+  
+  /* this class is instead of slider in the homepage */
+  .slider2 {
+    -webkit-appearance: none;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    /* the height changes */
+    height: 4px;
+    /* border-radius: 4px;    */
+    background: none;
+    outline: none;
+    top: 0;
+  }
+
+
+
+  .slider2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%; 
+    background: var(--white);
+    cursor: pointer;
+    box-shadow: 0px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65);
+  }
+
+  .slider2::-moz-range-thumb {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: var(--white);
+    cursor: pointer;
+    box-shadow: 0px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65);
+  }
+
+  /* NEWW ON 1ST BUGS ROUND */
+  .slider2::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%; 
+    background: var(--white);
+    cursor: pointer;
+    box-shadow: 0px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65);
+  }
+
+  .slider2::-moz-range-thumb:hover {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: var(--white);
+    cursor: pointer;
+    box-shadow: 0px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65);
+  }
+
+  
+
+  /* CHANGE AFTER FIRST BUG ROUND */
+  .invest-header{
+    height: 63px;
+    box-shadow: 0px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65);
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* this I added */
+  @media only screen  and (min-width : 1824px) {
+    /* for big screens */
+    .invest-header{
+      height: 10%;
+    }
+  }
+  
+  /* This is where the map would go, I'm giving it a background color to see a difference on screen while styling */
+  .map-container{
+
+    /* REMOVEDDD THE HEIGHT */
+      /* changed the height */
+    /* height: 90%; */
+    background-color: lightgray;
+    flex-grow: 1;
+  }
+  
+  .img-title-container{
+    width: 42%;
+    display: flex;
+  }
+  
+  
+  
+  .budget-img{
+    background-image: url("../img/budjet-icon@2x.png");
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    height: auto;
+    margin: 6px;
+    width: 20%;
+  }
+  
+  .budget-title{
+    margin: auto 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #0d162c;
+  }
+  
+  /* this goes instead of the slider-container for the slider in the right column header */
+  .slider-container3{
+    /* the width is different than the original */
+   width: 58%; 
+   margin: auto 0;
+   /* after this the properties are new */
+   box-sizing: border-box;
+   padding: 0 0 0 4%;
+  }
+  
+  /* this goes instead of the slider-box class for the slider in the right column header */
+  .slider-box3 {
+    /* the display is different */
+    display: inline-block;
+    width: 70%;
+    /* the background color is different */
+    background: #063069;
+    /* the hegith is 4px instead of 5px */
+    height: 4px;
+    position: relative;
+    /* it doesnt have border radius */
+    /* border-radius: 5px; */
+    /* this is new, the others didnt have vertical-align */
+    vertical-align: middle;
+  }
+  
+  /* this does instead of slider-right for the slider in the right column header */
+  .slider-right3 {
+    /* the backgroun is different */
+    background: #73aafa;
+    /* the height changes from 5px to 4px */
+    height: 4px;
+    /* it doesnt have border radius */
+    /* border-radius: 0 5px 5px 0; */
+    width: 50%;
+    right: 0;
+    position: absolute;
+  }
+  
+  .output-style2{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.65;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #0d162c;
+    padding: 0 0 0 3%;
+  }
+  
+
+  
+  .progress-circle {
+    transition: stroke-dashoffset 1s;
+  }
+  
+  .percentage{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5em;
+
+  }
+
+  .last-box{
+    position: relative;
+  }
+  
+
+
+  .box-perc{
+    padding-top: 5%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    width: 45%;
+  }
+
+  @media only screen and (min-width:1824px){
+    @media only screen and (max-height: 980px){
+      .box-perc{
+        width: 30%;
+      }
+    }
+  }
+
+  @media only screen and (max-height: 678px){
+    .box-perc{
+      width: 30%;
+
+    }
+  }
+
+  .month-mortgage{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: var(--white);
+
+  }
+
+  .month-mortgage-output{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #46e6fd;
+    margin: 0;
+  }
+
+
+
+.disp-none{
+  display: none;
+}
+
+
+/* OTHER FILTERS */
+
+
+.min-plus-box{
+  height: 33%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.min-plus-title{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: var(--white);
+  margin: auto 0;
+}
+
+.min-plus-input{
+  display: flex;
+  margin: auto 0 ;
+}
+
+.min-plus{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 2.6px;
+  text-align: left;
+  color: #34e4fd;
+  -webkit-appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.min-plus:focus{
+  outline: none;
+}
+
+
+.min-plus-number{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 2px;
+  text-align: left;
+  color: var(--white);
+  margin: auto 0;
+}
+
+
+/* THIS IS NEW FOR THE BUBBLES!!!! */
+
+
+
+.bubble1 {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: var(--white);
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 140%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 260px;
+  text-align: left;
+  letter-spacing: 0.2px;
+  font-size: 13px;
+  line-height: 1.88;
+
+}
+
+.bubble1::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 26px 15px 0;
+  border-color: transparent #000000;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: 100%;
+  top: 31%;
+}
+.output-style:hover .bubble1 {
+  visibility: visible;
+}
+
+.bubbleTitle1{
+  text-decoration: underline;
+  margin: 0;
+}
+
+.bubble2 {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: var(--white);
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 350px;
+  text-align: left;
+  letter-spacing: 0.2px;
+  font-size: 13px;
+  line-height: 1.88;
+
+}
+
+.bubble2::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 26px 15px 0;
+  border-color: transparent #000000;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: 100%;
+  top: 31%;
+}
+
+.box-perc:hover .bubble2 {
+  visibility: visible;
+}
+
+
+/* THIS CHANGES ARE NEW, FOR THE MAP REFERENCE ON THE BOTTOM */
+.reference-box{
+  width: 220px;
+  height: 50px;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 1px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65);
+
+}
+
+.referenceTitle{
+  width: 120px;
+  font-size: 13px;
+}
+
+.referenceGradient-box{
+  font-size: 12px;
+  margin: 5px 0px;
+
+}
+
+.referenceGradient{
+  width: 120px;
+  height: 15px;
+  background-image: linear-gradient(to right, #32DAFF, #2FC9EE , #2CB9DD, #29A8CC , #2697BB, #2387AA ,
+  #1F7698 , #1C6687, #195576, #164465, #133454, #102343);
+  display: inline-block;
+  /* margin: 2px; */
+  
+  
+}
+
+.referenceNumber{
+  display: inline;
+}
+
