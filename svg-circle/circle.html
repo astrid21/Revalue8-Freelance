@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <style>
+        
+            html, body {
+background-image: linear-gradient(9deg, #1a4787, #0d162c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+}
+/* 
+.progress-ring{
+    width: 200px;
+    height: 200px;
+} */
+
+
+.progress-circle__mortage {
+    transition: stroke-dashoffset 1s;
+}
+
+.percentage{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vw;
+}
+
+        </style>
+</head>
+<body>
+
+    <div class="box">
+
+            <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 200 200"
+            class="progress-ring" 
+            preserveAspectRatio="xMidYMid meet">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="50%">
+                        <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#03e4ff;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <circle
+                    class="progress-circle__mortage"
+                    stroke="url(#grad1)"
+                    stroke-width="10"
+                    fill="transparent"
+                    r="90"
+                    cx="130"
+                    cy="100"
+                    stroke-dasharray="565.48 565.48"
+                    stroke-dashoffset="565.48"
+                    transform="rotate(90 100 100)"
+                    />
+                    <text fill="url(#grad1)" class="percentage"  x="40" y="100">3.4%</text>
+                </svg>
+    </div>
+<script>
+    $(document).ready(function(){  
+    // const circle1 = document.querySelector('.progress-circle__investment');
+    // const radius1 = circle1.r.baseVal.value;
+    // const circumference1 = radius1 * 2 * Math.PI;
+
+    const circle2 = document.querySelector('.progress-circle__mortage');
+    const radius2 = circle2.r.baseVal.value;
+    const circumference2 = radius2 * 2 * Math.PI;
+
+    //the percent of the circle that wants to be shown should be 
+    function setProgress(percent, circumference, circle) {
+        const offset = circumference - percent / 100 * circumference;
+        circle.style.strokeDashoffset = offset;
+    }
+
+    // setProgress(60, circumference1, circle1)
+    setProgress(60, circumference2, circle2)
+})    
+
+</script>
+</body>
+</html>

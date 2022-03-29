@@ -1,0 +1,41 @@
+/* THIS CHANGES ARE NEW, FOR THE MAP REFERENCE ON THE BOTTOM */
+.reference-box{
+    width: 220px;
+    height: 45px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    /* text-align: center; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 1px 1px 4.6px 0.5px rgba(0, 0, 0, 0.65);
+  
+  }
+  
+  .referenceTitle{
+    width: 137.72px;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  
+  .referenceGradient-box{
+    display: flex;
+    margin: 5px 0px;
+  
+  }
+  
+  .referenceGradient{
+    width: 137.72px;
+    height: 15px;
+    background-image: linear-gradient(to right, #32DAFF, #2FC9EE , #2CB9DD, #29A8CC , #2697BB, #2387AA ,
+    #1F7698 , #1C6687, #195576, #164465, #133454, #102343);
+    display: inline-block;
+    margin-left: 2.5px;
+    
+  }
+  
+  .referenceNumber{
+    display: inline;
+    font-size: 11px;
+    margin: 0px 9.5px;
+  }

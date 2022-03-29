@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+            <div class="container">
+                <nav class="navBar">
+                    <div >
+                        <img src="img/logo.png" alt="logo-revalue">
+                    </div>
+                    <div class="language">
+                        <a href="#" class=" language-select en-he ">En</a>
+                        <span>|</span>
+                        <a href="#" class="en-he">He</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="intro">
+                    <h1 class="titleh1">Find Your <br> Best Real Estate <br> Investment </h1>
+                    <h2 class="titleh2">A newly developed algorithm that <br> scans large sets of data and calculates <br> your investment returns </h2>
+                    <input type="image" src="img/button.png">
+                </div>
+            </div>
+
+       <div class="footer">
+            <div class="container bottom">
+                <div class="column-1">
+                    <h3 class="title-footer">Where do you want to invest?</h3>
+                    <h3 class="title-footer">What is your budget?</h3>
+                </div>
+                <div class="column-2">
+                    <div class="custom-select">
+                        <select name="Country" class="select-country">
+                            <option value="">Country </option>
+                        </select>
+                        <select name="Enter" class="select-search">
+                            <option value="Enter">Enter an agent, neighbarhood, adress, zip code, or listing ID</option>
+                        </select>
+                    </div>
+                    <div class="slider-search-container">
+                        <div class="slider-container">
+                            <div class="slider-box">
+                                <div class="slider-right"></div>
+                                <input type="range" min="0" max="1000000" value="500000" class="slider">
+                            </div>
+                            <div class="output-container">
+                                <span>0$</span>
+                                <span class="output"></span>
+                            </div>
+                        </div>
+                        <div class="search-container">
+                            <span>Search  ></span>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        var max = 500000;
+
+$(document).ready(function(){
+    var slider = $('.slider');
+    var output = $('.output');
+    var sliderRight = $('.slider-right');
+
+    function getPercentage (val) {
+        return val / 10000;
+    }
+
+    function getSliderRightWidth (val) {
+        return 100 - getPercentage(val) + '%';
+    }
+    
+    function GetValueFromRange(sli, out){
+        sli.on('input', function(){
+            console.log(getPercentage(sli.val()))
+            value = sli.val()
+            out.text(value + '$');
+            sliderRight.css('width', getSliderRightWidth(value));
+        })
+    }
+
+    var value = slider.val()
+    output.html(value + '$');
+    GetValueFromRange(slider, output);
+})    
+
+
+    </script>
+</body>
+</html>

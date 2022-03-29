@@ -1,0 +1,66 @@
+
+:root {
+    --white: #ffffff;
+    --neon-blue: #03e4ff;
+  }
+
+.plus{
+    color: var(--neon-blue);
+}
+
+.min{
+    color: var(--neon-blue);
+}
+
+.plusminContainer{
+display: flex;
+flex-flow: column;
+line-height: 0.6;
+font-size: 2vw;
+}
+
+.added{
+    display: inline-block;
+    width: 95%;
+}
+
+
+
+.container2{
+    box-sizing: border-box;
+    width: 100%;
+    /* CHANGED THE PADDING!! */
+    padding: 0px 10px 0px 30px;
+  }
+
+  .sliderPlusMin{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .slider-box2{
+    background: linear-gradient(to right, #34E3FD, #2696F1);
+    height: 4px;
+    position: relative;
+    border-radius: 5px;
+    /* ADDED A WIDTH */
+    width: 95%;
+    /* ADDED MARGINNN */
+    margin: auto 0;
+  }
+
+  .slider-output-container{
+      /* CHANGED THE MARGIN */
+    margin: 0 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: var(--white);
+  }
